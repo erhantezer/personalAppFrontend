@@ -50,7 +50,7 @@ const AuthContextProvider = (props) => {
     }
   }
 
-  
+
 // LOGIN
 const signIn = async (email, password, userName, navigate) => {
 
@@ -108,11 +108,11 @@ const logOut = async (navigate) =>{
 
 
 let value = {
-  createUser,
-  currentUser,
-  myKey,
-  signIn,
-  logOut,
+  createUser, // register oluşturma ve içinde username ve token oluşturmak için yazılan fonksiyondur
+  currentUser, // register login den gelen username dir
+  myKey, // register ve loginden gelen token dir
+  signIn, // login oluşturma fonksiyonu
+  logOut, // logout oluşturma fonksiyonu sessionStorage içindeki username ve token boşaltma ve currentUser ve myKey fals yapma
 }
 
   return (
@@ -122,4 +122,4 @@ let value = {
   )
 }
 
-export default AuthContextProvider
+export default AuthContextProvider // ana fonksiyon ilerde kullanılacak Authcontext için fonksiyonları barındırıyor

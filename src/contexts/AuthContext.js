@@ -5,7 +5,7 @@ import { toastSuccessNotify } from '../helper/ToastNotify';
 
 export const AuthContext = createContext();
 
-const url = "http://127.0.0.1:8000/";
+const url = "http://127.0.0.1:8000/"; // backend oluşturduğumuz url
 
 
 const AuthContextProvider = (props) => {
@@ -50,8 +50,8 @@ const AuthContextProvider = (props) => {
     }
   }
 
+  
 // LOGIN
-
 const signIn = async (email, password, userName, navigate) => {
 
   try {
